@@ -1,0 +1,720 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+:root{
+    /* colors */
+    --Body-text-light: #4D3E32;   /*text/categoria/title*/
+    --surface-light: #F9EDE2;      /*bg page one/two/contactame*/
+    --categoria-text:#F9EDE2;
+    --surface-editorial:#FCEEF5;          /*bg editorial*/
+    --posters-color:#DBE6CB;              /*bg posters*/
+    --categoria-surface:#4D3E32;
+    
+    /* Modo oscuro */
+    /* --categoria-text: #4D3E32;
+    --Body-text-light: #F9EDE2;            
+    --surface-light: #B19A88;        
+    --surface-editorial:#EA8ABC;   
+    --posters-color: #9FBD75;   
+    --categoria-surface: #F9EDE2; */
+              
+
+    /* suavizando la navegación */
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Abril Fatface", serif;
+    font-family: "Radio Canada", sans-serif;
+}
+.dark-theme{
+    --categoria-text: #4D3E32;
+    --Body-text-light: #F9EDE2;            
+    --surface-light: #4D3E32;        
+    --surface-editorial:#EA8ABC;   
+    --posters-color: #9FBD75;   
+    --categoria-surface: #F9EDE2;
+}
+
+
+#icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    
+}
+
+.header{
+    background-color: var(--surface-light);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+.logo__svg{
+    width: 157px;
+    height: 65.65px;
+ 
+}
+
+.nav{
+    padding-top: 10px;
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    font-style: normal;
+   transition: 0.3s ease;
+   
+}
+.nav__link{
+    color:  var(--Body-text-light);
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+.nav__link:hover{
+    border-bottom: 3px solid  var(--Body-text-light);
+
+}
+/* page one */
+.pageone__content{
+    background-color: var(--surface-light);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+   
+}
+.title__portafolio{
+    background-color: var(--surface-light);
+    margin: auto;
+    justify-content: center;
+    margin-top: 178px;
+    width: 598px;
+    height: 173px;
+    padding-bottom: 473px;
+    padding-top: 100px;
+       
+}
+/* About me */
+section{
+    min-height: 100vh;
+    /* padding: 10rem 12% 10rem; */
+
+}
+.about__me{
+    background-color: var(--surface-light);
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    padding-top: 234px;
+}
+span{
+    color:  #DC378C;
+    font-family: "Radio Canada";
+    font-size: 37px;
+
+}
+.aboutme__content{
+    padding-left: 12px;
+}
+
+.aboutme__content  h3{
+    color: var(--Body-text-light);
+    font-size: 24px;
+    margin-bottom: 2px;
+    margin-top: 1px;
+}
+.aboutme__content  h1{
+    color: var(--Body-text-light);
+    font-size: 37px;
+    font-weight: 700;
+    margin-top: 1px;
+    line-height: 1;
+}
+.aboutme__content p{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: "Radio Canada";
+    line-height: 1.5;
+    max-width: 1000px;
+    color: var(--Body-text-light);
+
+
+}
+.social__icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid black;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    /* color: blue; */
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+.social__icons a:hover{
+    color: var(--posters-color);
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--Body-text--light);
+    background-color: var(--surface-editorial);
+}
+
+.btn__group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #EA8ABC;
+    border-radius: 40px;
+    font-size: 20px;
+    color: var(--Body-text--light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0 20px var(--Body-text-light),
+                0 0 30px var(--Body-text-light),
+                0 0 50px var(--Body-text-light);
+}
+.text__animation{
+    font-size: 40px;
+    font-weight:600;
+    min-width: 200px;
+}
+.text__animation span::before{
+    content: "Diseñadora Gráfica";
+    color: #DC378C;
+    animation: words 20s infinite;
+}
+.text__animation span::after{
+    content: "";
+    background-color: #DC378C transparent;
+    width: calc(100% + 8px); /*añadir margenes mas precisos*/
+    height: 100%;
+    right: -8px;
+}
+
+@keyframes words{
+    0%,
+    20%{
+        content:"ilustradora";
+    }
+    21%,
+    40%{
+        content:"artista";
+    }
+    41%,
+    60%{
+        content:"cartelista";
+    }
+    61%,
+    80%{
+        content:"ui/ux Designer";
+    }
+    81%,
+    100%{
+        content:"diseñadora editorial";
+    }
+   
+}
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+       width: calc(100% + 8px);
+    }
+}
+/* .home__img{
+    border-radius: 50%;
+*/
+/* .home__img img{ */
+    /* position: relative; */
+    /* top: 3rem;
+    width: 20vw;
+    border-radius: 50%;
+    box-shadow: 0 0 26px var(--Body-text--light);
+    cursor: pointer;
+    transition: 0,4s ease-in-out;
+    
+} */
+/* .home__img img:hover{
+    box-shadow: 0 0 35px var(--Body-text--light),
+                0 0 50px var(--Body-text--light),
+                0 0 100px var(--Body-text--light);
+} */
+/* page__three */
+.page__three{
+    background-color:var(--surface-editorial);
+    width:1,440px;
+    height: 1,024px;
+    padding:114px 0px 135px 0px;
+    gap:10px;
+}
+.editorial__content{
+    padding: 50px 110px 10px 110px;
+    align-items: center;
+    align-content: center;
+    gap:139px 141px;
+    flex: 1 0 0;
+    display: flex;
+
+}
+.title__editorial{
+    font-family: "Abril Fatface";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 114.66px;
+    text-align: left;
+    padding-left: 50px;
+    color: var(--Body-text-light);
+
+}
+.paragraph__editorial{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    width: 341px;
+    height: 257px;
+}
+.categoria__editorial{
+    display: flex;
+    width: 90px;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99px;
+    background-color: var(--categoria-surface);
+    color: var(--categoria-text);
+}
+.title__book{
+    color:var(--Body-text-light);
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.paragraph__book{
+    color: var(--Body-text-light);
+    text-align: justify;
+    font-family: "Radio Canada";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.img__book{
+    display: flex;
+    flex-direction: column;
+}
+/*page four */
+.page__four{
+    width: 100%;
+    padding: 283px 0px 233px 0px;
+    background-color:var(--surface-editorial);
+}
+.periodico__content{
+    padding: 50px 110px 10px 110px;
+    align-items: center;
+    align-content: center;
+    gap: 139px 141px;
+    flex: 1 0 0;
+    display: flex;
+    margin: auto;
+}
+
+.paragraph__periodico{
+  
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    width: 341px;
+    height: 257px;
+}
+.categoria__periodico{
+    display: flex;
+    width: 210px;
+    height: 50px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99px;
+    background-color: var(--categoria-surface);
+    color: var(--categoria-text);
+}
+.title__periodico{
+    color:var(--Body-text-light);
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.paragraph__periodico{
+    color: var(--Body-text-light);
+    text-align: justify;
+    font-family: "Radio Canada";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.periodico__img{
+    width: 440px;
+    height: 452px;
+    flex-shrink: 0;
+}
+/* page five */
+.page__five{
+    background-color:var(--surface-editorial);
+    width: 100%;
+    padding-top: 114px; 
+    padding-bottom: 114px;
+    align-items: center;
+    gap: 10px;
+    padding: 3px, 0px, 225px, 0px;
+
+}
+.revista__content{
+    padding: 50px 0px 10px 110px;
+   
+    align-items: center;
+    align-content: center;
+    gap: 70px;
+    flex: 1 0 0;
+  
+    display: flex;
+    
+
+}
+.revista__img{
+    width: 405.356px;
+    height: 333.442px;
+
+}
+.paragraph__revista{
+ 
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    width: 341px;
+    height: 257px;
+}
+.categoria__revista{
+    display: flex;
+    width: 137px;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99px;
+    background-color: var(--categoria-surface);
+    color: var(--categoria-text);
+    }
+.title__revista{
+    color:var(--Body-text-light);
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.paragraph__revista{
+    color: var(--Body-text-light);
+    text-align: justify;
+    font-family: "Radio Canada";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.img__revista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0px -2px;
+    flex: 1 0 0;
+    flex-direction: column;
+
+}
+/* page six */
+.page__six{
+    background-color:var(--surface-editorial);
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    padding: 248px 58px 248px 58px;
+
+}
+.brillante__content{
+    display: flex;
+    height: 520px;
+    align-items: center;
+    align-content: center;
+    gap: 130px;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    }
+
+.paragraph__brillante{
+    width: 341px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.categoria__brillante{
+    display: flex;
+    width: 210px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99px;
+    background-color: var(--categoria-surface);
+    color: var(--categoria-text);
+}
+.title__brillante{
+    color:var(--Body-text--light);
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.paragraph__brillante{
+    color: var(--Body-text--light);
+    text-align: justify;
+    font-family: "Radio Canada";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.brillante__img{
+    width: 626px;
+    height: 499px;
+}
+/* page seven (Posters) */
+
+/* helvetica 1 */
+.posters{
+    width:1,440px;
+    height:1,024px;
+    padding: 206px 0px 265px 95px;
+    gap: 10px;
+    background:var(--posters-color);
+}
+.posters__content{
+    display: inline-flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+}
+
+.helvetica1__content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.helvetica1{
+    width: 382px;
+    height: 495px;
+}
+.categoria__posters--1{
+    display: flex;
+    width: 115px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 16px;
+    border-radius: 99px;
+    background-color: var(--categoria-surface);
+    color: var(--categoria-text);
+}
+.title__posters{
+    color: var(--Colors-title-light, #4D3E32);
+    font-family: "Abril Fatface";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* caribe 2 */
+.caribe1__content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+.caribe1{
+    width: 382px;
+    height: 495px;
+}
+.categoria__posters--1{
+    display: flex;
+    width: 115px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 16px;
+    border-radius: 99px;
+    background-color: var(--categoria-surface);
+    color: var(--categoria-text);
+}
+/* helvetica 2 */
+.helvetica2__content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+.helvetica2{
+    width: 382px;
+    height: 495px;
+}
+.categoria__posters--1{
+    display: flex;
+    width: 115px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 16px;
+    border-radius: 99px;
+    background-color: var(--categoria-surface);
+    color: var(--categoria-text);
+}
+/* posters page 2 */
+.posters__2{
+    width:1,440px;
+    height:1,024px;
+    padding: 206px 0px 265px 95px;
+    gap: 10px;
+    background: var(--posters-color);
+}
+.posters__content{
+    display: inline-flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+/* helvetica 3 */
+.helvetica3__content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.helvetica3{
+    width: 382px;
+    height: 495px;
+}
+/* caribe 2 */
+.caribe2__content{
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+}
+.caribe2{
+    width: 382px;
+    height: 495px;
+}
+/* helvetica 3 */
+.helvetica4__content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+.helvetica4{
+    width: 382px;
+    height: 495px;
+}
+/* contacto */
+.contact__me{
+    background-color: var(--surface-light);
+    align-items: center;
+    padding-top: 150px;
+}
+.contact__me h2{
+    margin-bottom: 3px;
+    color: var(--Body-text-light);
+    font-family: "Radio Canada";
+    font-size: 37px;
+    
+}
+.title__contact{
+    text-align: center;
+    padding-bottom: 24px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 5px auto;
+}
+.contact__me form textarea{
+    width: 20%;
+    padding: 12px;
+    font-size: 12px;
+    background-color: var(--surface-editorial);
+    border-radius: 20px;
+    border: 2px solid  #DC378C;
+    box-shadow: 0 0 24px  #DC378C;
+}

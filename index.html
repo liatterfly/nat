@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+       <header class="header">
+            <h1 class="header__logo">
+                <a href="#home">
+                    <img class="logo__svg" src="Recursos/logo three.svg" alt="">
+                </a>
+            </h1>
+            <nav class="nav">
+                <a class="nav__link" href="#About me">About me</a>
+                <a class="nav__link" href="#Proyectos">Proyectos</a>
+                <a class="nav__link" href="#Contacto">Contacto</a>
+                <img src="Recursos/moon.png" id="icon">
+            </nav>  
+        </header>
+       
+        <main class="main">
+            <!-- page one -->
+            <section id="home" class="pageone__content">
+                <h2 class="title__portafolio">
+                    <img class="portafolio__svg" src="Recursos/titulo portafolio.svg" alt="Logo">
+                </h2>
+            </section>
+            <!-- page two -->
+                <section class="about__me" id="About me">
+                    <div class="aboutme__content">
+                        <h1>Hola, soy <span>Natalia </span></h1>
+                        <h3 class="text__animation">Soy una <span></span></h3>
+                        <p>Vivo en Barranquilla, actualmente soy estudiante de diseño grafico en la Universidad Autónoma del Caribe. En la rama del diseño me gusta mucho el diseño editorial, la creación de portadas, posters y el diseño web.</p>
+
+                        <div class="social__icons">
+                            <a href="https://www.behance.net/nataliacrdenas5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASxJREFUSEvtleERgjAMhcsk6iY6iTqJOok6iTqJbqJ8HK8+egWqh//kjlPaJF/yEkoVfnxVP44f/oBRhV2i5YD1dTRSj4EDngNBHiGEc72/T2zSZ7Y7a30AAuqa2/9DEuCSSWrlazkAcrgRgHvrlO55Ep5UZJQAMJZ8pxDC1jJEjl37DICb/QjrAyCFrnXtsDFnNRx5GAwF1pDwvJBzaZOxd/0BHtsgioGUrAGKleYAmhj8Z7UxjspOEAIBoRqmy6tVVU0VpT1wOXCk6T5d6TBFmUoBLgkTRmOVaWcsjdQ0egygLKUtPlRAcNY6DW1lYyhuel8+aTLB1TzAyMYvEHrhvaKqZtpKAbmjwqdGyug9iGfXFN8DQNzZA3EKQOY4ei/9AYPypFM0avyNwQtr5kwZmVNJHQAAAABJRU5ErkJggg=="/></a>
+                            <a href="https://github.com/liatterfly"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWBJREFUSEu1lY1NxTAMhP02gUmATWASYBJgEmAS2AT6Vbno8temT6qlqmpi+3yX2L3EyXY5OX/MANxHBM9dev9GBM/38v2VnmGdWwA3EfGWkm4RBewhgTZ+I4CXiHg+IB8gH4s/cYX1AB5T5QfyZ9fXGqQGQJaf5I6+Twt1AMWGSjH8MBLixz7nxD4xrK1WA3ya5u/JWQmVvPftkuJ32wOopXGAPbm4DMTLOPSVhTOoAbLTXvYkmaSVdOuBO4BXUdCcAMDF5aV6CiwAqECHlx0mk+PWLdAZOMA1DDw+F+8ATvEagD9jmy+IA9Tde+QWDWMdgEaBhVvTmdU+Z+aNuHlNdRMIohsBpEM1PVnzZnNJHbe4IKNRoQmpEaCx4Ynq5mqq740K1qTnnjy9iQtLzi7b3riWPIziItAKUbIm+YiBAvyH02MjBs0EnWHgPupuP2D2R+vFRZv5Jx+YFq3r6QD/Wc9YGdHIjH4AAAAASUVORK5CYII="/></a>
+                            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOZJREFUSEvtldEJwlAMRW830U10E51EnUSdxG6im6hHGonhlbxiK340ICIkOcm9edho4mgm7q8ZkCrsJVpJuki6STo/K/dp9WfCRtIx1nvAVdLC1ZwkbSshNAZgwZBLfnjAvdCMxHU3VYnFQDRn+xiv3hmAnD7JTJK+JasB1uDgfMGr0tQeNhhg2/DtvRptg0q/32npBlwRMmTT4hGfKFkKQHMgu3CCfpO2uzLeDHmDPDBT2YCLiQ286V8BbCpAXA/BA2R6i1EAdj3oHWM0QN8l/QcgTuFNzN5ArMUjLnD+R8uU+4FED3szORlvMzCyAAAAAElFTkSuQmCC"/></a>
+                        </div>
+                        
+                        <div class="btn__group">
+                            <a href="#Contacto" class=
+                            "btn">Contacto</a>
+                        </div>
+                        
+                    </div>
+                        <!-- <div class="home__img">
+                            <img src="/Recursos/Perfil imagen.jpeg" alt="">
+                        </div> -->
+                    
+                </section>
+                <!-- page three -->
+                    <section id="Proyectos" class="page__three">
+                        <h2 class="title__editorial">Editorial</h2>
+                        <div class="editorial__content">
+                            <div class="info__editorial">
+                                <figure>
+                                    <img class="book__img" src="Recursos/Book izq.svg" alt="">
+                                </figure>
+                            </div>
+                            <div class="paragraph__editorial">
+                                <h1 class="categoria__editorial">Libros</h1>
+                                <h1 class="title__book">Ready Player One</h1>
+                                <p class="paragraph__book">Propuesta de la portada y cubierta para un libro de nuestra elección, para un proyecto académico.</p>
+                            </div>
+                            <figure class="img__book">
+                                <img src="Recursos/Book derecha 1.svg" alt="">
+                                <img src="Recursos/book derecha 2.svg" alt="">
+                            </figure>
+                        
+                        </div>
+                    </section>
+                    <!-- Page four (periodico)-->
+                    <section class="page__four">
+                        <div class="periodico__content">
+                            <div class="info__periodico">
+                                <figure>
+                                    <img class="periodico__img" src="Recursos/Newspaper 3.svg" alt="">
+                                </figure>
+                            </div>
+                            <div class="paragraph__periodico">
+                                <h1 class="categoria__periodico">Periódico</h1>
+                                <h1 class="title__periodico">Quince16</h1>
+                                <p class="paragraph__periodico">Diagramación de una notica sobre el diseño para el periodico de la universidad.</p>
+                        </div>
+                    </section>
+                    <!-- page five (revista)-->
+                    <section class="page__five">
+                        <div class="revista__content">
+                            <div class="info__revista">                                <figure>
+                                    <img class="revista__img" src="Recursos/revista 1.svg" alt="">
+                                </figure>
+                            </div>
+                            <div class="paragraph__revista">
+                                <h1 class="categoria__revista">Revista</h1>
+                                <h1 class="title__revista">El cineasta</h1>
+                                <p class="paragraph__revista">Creación de paginas para una revista ficticia de cine llamada “El Cineasta”, para un proyecto académico.</p>
+                            </div>
+                            <figure class="img__revista">
+                                <img class="revista2__img" src="Recursos/revista 2.svg" alt="">
+                                <img src="Recursos/revista 3.svg" alt="">
+                            </figure>
+                        </div>
+                    </section>
+                    <!-- page six -->
+                    <section class="page__six">
+                        <div class="brillante__content">
+                            <div class="info__brillante">
+                                <figure>
+                                    <img class="brillante__img" src="Recursos/brillante revista.svg" alt="">
+                                </figure>
+                            </div>
+                            <div class="paragraph__brillante">
+                                <h1 class="categoria__brillante">Revista</h1>
+                                <h1 class="title__brillante">Una mente brillante</h1>
+                                <p class="paragraph__brillante">Diseño de pagina sobre la pelicula “una mente brillante”.</p>
+                        </div>
+                    </section>
+                    <!-- page seven (posters) -->
+                    <section class="posters">
+                        <h1 class="title__posters">Posters</h1>
+                        <div class="posters__content">
+                            <!-- helvetica 1 -->
+                            <div class="helvetica1__content">
+                                <figure>
+                                    <img class="helvetica1" src="Recursos/helvetica 1.svg" alt="">
+                                    <h1 class="categoria__posters--1">Helvetica</h1>
+                                </figure>
+                            </div>
+                            <!-- caribe 1 -->
+                            <div class="caribe1__content">
+                                <figure>
+                                    <img class="caribe1" src="Recursos/caribe 1.svg" alt="">
+                                    <h1 class="categoria__posters--1">Caribe</h1>
+                                </figure>
+                            </div>
+                            <!-- helvetica 2 -->
+                            <div class="helvetica2__content">
+                                <figure>
+                                    <img class="helvetica2" src="Recursos/helvetica 2.svg" alt="">
+                                    <h1 class="categoria__posters--1">Helvetica</h1>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="posters__2">
+                        <div class="posters__content">
+                            <!-- helvetica 3 -->
+                            <div class="helvetica3__content">
+                                <figure>
+                                    <img class="helvetica3" src="Recursos/helvetica 3.svg" alt="">
+                                    <h1 class="categoria__posters--1">Helvetica</h1>
+                                </figure>
+                            </div>
+                            <!-- caribe 2 -->
+                            <div class="caribe2__content">
+                                <figure>
+                                    <img class="caribe2" src="Recursos/caribe 2.svg" alt="">
+                                    <h1 class="categoria__posters--1">Caribe</h1>
+                                </figure>
+                            </div>
+                            <!-- helvetica 4 -->
+                            <div class="helvetica4__content">
+                                <figure>
+                                    <img class="helvetica4" src="Recursos/helvetica 4.svg" alt="">
+                                    <h1 class="categoria__posters--1">Helvetica</h1>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- contact me -->
+                <section class="contact__me" id="Contacto">
+                        <h2 class="title__contact">¡Contactame!</h2>
+                    <form action="">
+                        <div class="message">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write a message">
+                            </textarea>
+                            <input type="submit" value="send message" class="btn">
+                        </div>
+                    </form>      
+                </section>
+        </main>
+    </div>
+    <script src="script.js"></script> 
+       
+</body>
+</html>
